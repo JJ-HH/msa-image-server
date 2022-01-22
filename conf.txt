@@ -4,7 +4,7 @@
 # explicitly permit access to web content directories in other
 # <Directory> blocks below.
 #
-Alias /images "/pub/images/"
+Alias /images/ "/pub/images/"
 <Directory "/pub/images">
   Options +Indexes
   AllowOverride all
