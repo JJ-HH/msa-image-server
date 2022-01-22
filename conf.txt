@@ -1,0 +1,14 @@
+
+#
+# Deny access to the entirety of your server's filesystem. You must
+# explicitly permit access to web content directories in other
+# <Directory> blocks below.
+#
+Alias /images "/pub/images/"
+<Directory "/pub/images">
+  Options +Indexes
+  AllowOverride all
+  Order allow,deny
+  Allow from all
+  Require all granted
+</Directory>
